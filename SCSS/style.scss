@@ -1,0 +1,203 @@
+@import 'inc/fonts';
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Muli", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    color: #333333;
+}
+
+.wrap {
+    width: 100%;
+    background: #F5FAFE;
+}
+
+
+.container {
+    max-width: 1440px;
+    padding-top: 40px;
+}
+
+.section_name {
+    font-family: 'Muli', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 65px;
+    background: inherit;
+    display: block;
+}
+
+.card_table {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.card_table>div {
+    margin-right: 30px;
+}
+
+.card_table>div:nth-child(3n + 2) {
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        margin-bottom: 30px;
+        margin-right: 10px;
+    }
+
+    .card_table>div:nth-child(2n) {
+        margin-right: 12px; 
+    }
+}
+
+
+.card {
+    background: #0A223D;
+    border-radius: 8px;
+    height: 500px;
+    color: #fff;
+}
+
+.horizontal {
+    display: flex;
+    width: 730px;
+    
+}
+
+.horizontal .card-img {
+    width: 366px;
+}
+
+.vertical {
+    width: 350px;
+    
+}
+
+.vertical .card-img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 30px;
+}
+
+.horizontal .card-info {
+    padding: 46px 2px  0 43px;
+}
+
+.vertical .card-info {
+    padding: 0 21px 0 43px;
+}
+
+.card-stars {
+    display: flex;
+}
+
+.card-stars>div {
+    margin-right: 4px;
+}
+
+.card-stars>div:last-child {
+    margin-right: 0;
+}
+
+.card-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    
+}
+
+.horizontal .card-name {
+    margin-bottom: 27px;
+}
+
+.vertical .card-name {
+    margin-bottom: 23px;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 160.6%;
+    width: 299px;
+    height: 165px;
+    margin-bottom: 34px;
+}
+
+
+.horizontal .card-properties {
+    margin-bottom: 37px;
+}
+
+.vertical .card-properties {
+    margin-bottom: 24px;
+}
+
+.card-properties>div {
+    margin-bottom: 11px;
+}
+
+.card-properties>div:last-child {
+    margin-bottom: 0;
+}
+
+
+.card-adress, .card-guests, .card-rooms {
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+}
+
+.card-adress-img, .card-guests-img, .card-rooms-img {
+    margin-right: 14px;
+}
+
+.price {
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    margin-bottom: 5px;
+}
+
+.price-sale {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.card-btn {
+    width: 120px;
+    height: 40px;
+    background: #EC1F46;
+    border-radius: 4px;
+    outline: none;
+    margin-left: auto;;
+    border: 0;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.card-block-btn {
+    display: flex;
+    align-items: center;
+}
